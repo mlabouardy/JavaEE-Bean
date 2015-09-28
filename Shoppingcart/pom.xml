@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.labouardy</groupId>
+  <artifactId>Shoppingcart</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>Shoppingcart-common</module>
+  	<module>Shoppingcart-ejb</module>
+  	<module>Shoppingcart-ear</module>
+  </modules>
+    <properties>
+    <!--
+      Propriété standard définissant la version minimale de Java supportée
+      par les fichiers sources (ici 1.7 pour Java 7).
+    --> 
+    <maven.compiler.source>1.7</maven.compiler.source>
+
+    <!--
+      Propriété standard définissant la version Java des fichiers compilés
+      du projet (ici 1.7 pour Java 7).
+    --> 
+    <maven.compiler.target>1.7</maven.compiler.target>
+
+    <!--
+      Le format d'encodage des fichiers source du projet. Attention, l'encodage
+      par défaut n'est pas le même sous Windows et sous les systèmes *NIX.
+      Il est donc plus sage de toujours positionner cette propriété dans le fichier pom.xml.
+    --> 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+	  <dependency>
+	  	<groupId>javax</groupId>
+	  	<artifactId>javaee-api</artifactId>
+	  	<version>7.0</version>
+	  	<scope>provided</scope>
+	  </dependency>
+  </dependencies>
+</project>
